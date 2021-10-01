@@ -30,7 +30,7 @@ export class NoComunesComponent {
 
   //i18nPlural
 
-  public clientes : string[] =['Pablo','Rodrigo'];
+  public clientes : string[] =['Pablo','Rodrigo','Victor','Raul'];
 
   clientesMap = {
     '=0' : 'no tenemos clientes esperando',
