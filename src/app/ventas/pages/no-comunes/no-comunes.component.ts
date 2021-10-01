@@ -54,4 +54,12 @@ export class NoComunesComponent {
     this.clientes.pop();
   }
 
+
+  //kayvaluepipe
+  persona = {
+    nombre : 'Pablo',
+    edad: 32,
+    direccion :'Chile'
+  }
+
 }
