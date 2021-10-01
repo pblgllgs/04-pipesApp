@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
+
 
 @Component({
   selector: 'app-no-comunes',
@@ -61,5 +63,28 @@ export class NoComunesComponent {
     edad: 32,
     direccion :'Chile'
   }
+
+  //JSON pipes
+
+  heroes = [
+    {
+      nombre :'Batman',
+      compañia: 'DC'
+    },
+    { nombre: 'ironman',
+      compañia: 'marvel'
+    }
+  ];
+
+  //async pipe
+
+  miObservable = interval(1000);
+
+
+  valorPromesa = new Promise( (resolve,rejects) => {
+    setTimeout( () => {
+      resolve('Tenemos data de promesa');
+    }, 3500 );
+  });
 
 }
